@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - IFSP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">Formulário de Avaliação Institucional - IFSP</h1>
+
+    <p id="descricao">
+        Ao responder a este formulário, você contribuirá significativamente para a melhoria contínua da instituição, 
+        fornecendo um feedback importante sobre sua experiência acadêmica.
+    </p>
+
+    <form id="pesquisa">
+
+            <!--PESSOAIS-->
+        <div id="info" class="pessoais">
+            <h2>Informações Pessoais</h2>
+
+            <label for="name">Nome completo:</label>
+            <input required id="name" type="text" placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail:</label>
+            <input required id="email" type="email" placeholder="exemplo@email.com">
+
+            <label for="number">Idade:</label>
+            <input required id="number" type="number" min="15" max="99" placeholder="Digite sua idade">
+
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" type="text" placeholder="Sua cidade">
+
+            <label for="estado">Estado:</label>
+            <input id="estado" type="text" placeholder="Seu estado">
+        </div>
+
+
+        <div id="vinculo" class="ifsp">
+            <h2>Vínculo com a Instituição</h2>
+
+            <label for="vinculo">Qual é o seu vínculo?</label>
+            <select id="vinculo">
+                <option value="estudante">Estudante</option>
+                <option value="professor">Professor</option>
+                <option value="ex_aluno">Ex-aluno</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="curso">Curso:</label>
+            <input id="curso" type="text" placeholder="Ex: TSI">
+
+            <label for="periodo">Período:</label>
+            <select id="periodo">
+                <option>1º Semestre</option>
+                <option>2º Semestre</option>
+                <option>3º Semestre</option>
+                <option>4º Semestre</option>
+                <option>5º Semestre</option>
+                <option>6º Semestre</option>
+            </select>
+        </div>
+
+        <!-- AVALIAÇÃO -->
+        <div id="avaliacao" class="ifsp">
+            <h2>Avaliação da Instituição</h2>
+
+            <p>Como você avalia a qualidade do ensino?</p>
+            <label><input type="radio" name="ensino"> Excelente</label>
+            <label><input type="radio" name="ensino"> Bom</label>
+            <label><input type="radio" name="ensino"> Regular</label>
+            <label><input type="radio" name="ensino"> Ruim</label>
+
+            <p>Como você avalia a infraestrutura?</p>
+            <label><input type="radio" name="infra"> Excelente</label>
+            <label><input type="radio" name="infra"> Bom</label>
+            <label><input type="radio" name="infra"> Regular</label>
+            <label><input type="radio" name="infra"> Ruim</label>
+
+            <p>Você recomendaria o IFSP para outras pessoas?</p>
+            <label><input type="radio" value="certeza" name="recomendacao"> Com certeza</label>
+            <label><input type="radio" value="sim" name="recomendacao"> Sim</label>
+            <label><input type="radio" value="talvez" name="recomendacao"> Talvez</label>
+            <label><input type="radio" value="nao" name="recomendacao"> Não</label>
+            <label><input type="radio" value="certezaNao" name="recomendacao"> Com certeza não</label>
+        </div>
+
+        <!-- INTERESSES -->
+        <div id="interesses" class="ifsp">
+            <h2>Interesses Acadêmicos</h2>
+
+            <p>Quais áreas você deseja desenvolver?</p>
+            <label><input type="checkbox"> Front-end</label>
+            <label><input type="checkbox"> Back-end</label>
+            <label><input type="checkbox"> Full Stack</label>
+            <label><input type="checkbox"> Java</label>
+            <label><input type="checkbox"> JavaScript</label>
+            <label><input type="checkbox"> Python</label>
+            <label><input type="checkbox"> C/C++</label>
+            <label><input type="checkbox"> Banco de Dados</label>
+            <label><input type="checkbox"> Inteligência Artificial</label>
+            <label><input type="checkbox"> Segurança da Informação</label>
+        </div>
+
+        <!-- FEEDBACK -->
+        <div id="feedback" class="ifsp">
+            <h2>Feedback</h2>
+
+            <p>Deixe um comentário ou sugestão:</p>
+            <textarea id="comentario" placeholder="Digite seu comentário aqui..."></textarea>
+
+        </div>
+
+        <button id="submit" type="submit">Enviar Resposta</button>
+
+    </form>
+
+</body>
+</html>
